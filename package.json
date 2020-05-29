@@ -1,0 +1,30 @@
+{
+  "name": "sfosbe",
+  "version": "1.0.0",
+  "description": "sfos backend",
+  "main": "index.js",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "jsonwebtoken": "^8.5.1",
+    "mongoose": "^5.9.7",
+    "multer": "^1.4.2",
+    "node-schedule": "^1.3.2",
+    "nodemon": "^2.0.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rLaurentePn2k19/sfosbe.git"
+  },
+  "author": "Rangie Laurente",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rLaurentePn2k19/sfosbe/issues"
+  },
+  "homepage": "https://github.com/rLaurentePn2k19/sfosbe#readme"
+}
