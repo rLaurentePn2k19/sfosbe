@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({ extended: true, limit: '50mb' }));
 app.use(bodyParser.json());
 app.use(cors())
 
-app.use('/files', express.static(path.join(__dirname, 'photos')))
+app.use('/', express.static(path.join(__dirname, 'photos')))
 
 require('./setup/mongo');
 
