@@ -8,7 +8,7 @@ router.route("/addViand").post(upload.single("img"), (req, res) => {
     console.log(req.file, " request file")
 
     let viand = JSON.parse(req.body.viand);
-    var imgUrl = `http://localhost:4000/files/`
+    var imgUrl = `https://sfos-backend.herokuapp.com/files/`
 
     const create_viand = new Viand({
         image: imgUrl + req.file.filename,
@@ -26,7 +26,7 @@ router.delete("/deleteViand/:id", (adminController.deleteViand));
 router.route("/updateViand").post(upload.single("viand_img"), (req, res) => {
     console.log(req.file.filename, " --- req.file.filename")
 
-    var imgUrl = `http://localhost:4000/files/`
+    var imgUrl = `https://sfos-backend.herokuapp.com/files/`
     
     const edit_viand = {
         id: req.body.viand_id,
